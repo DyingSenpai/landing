@@ -253,11 +253,16 @@ body {
   display: flex;
 }
 
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .nav__link {
   color: #969696;
   font-family: "PT Sans-Regular";
   font-weight: 400;
-  display: inline-block;
   padding: 3rem 2rem 3rem 2rem;
   -webkit-transition: 0.1s linear;
   -o-transition: 0.1s linear;
