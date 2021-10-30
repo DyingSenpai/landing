@@ -286,3 +286,61 @@ body {
 .nav__button:first-child {
   margin: 0 4rem;
 }
+
+/* Style for Main Block */
+
+.main {
+  background-image: url("../img/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__logo {
+  margin-top: 16rem;
+  margin-bottom: 8rem;
+  padding: 9.5rem 6.5rem;
+  text-align: center;
+  border: 4px solid #fff;
+  text-transform: uppercase;
+}
+
+.main__logo-top {
+  margin-bottom: 0.7rem;
+  font-family: "Post No Bills Jaffna Bold";
+  font-size: 6.4rem;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+}
+
+.main__logo-down {
+  font-family: "PT Sans-Regular";
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.main__text {
+  text-align: center;
+  margin-bottom: 15.5rem;
+  width: 73rem;
+  font-family: "PT Sans-Regular";
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 2.4rem;
+}
+
+/* Style for Content Block */
