@@ -9,8 +9,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
-        padding: 15px 0;
+        padding: 1.5rem 0;
+        font-family: 'PT Sans-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $text-gray;
     }
 
     &__item {
@@ -21,9 +24,17 @@
 
     &__info {
         margin-left: 1.5rem;
-        font-family: 'PT Sans-Regular', sans-serif;
-        font-weight: 400;
-        font-size: 1.2rem;
-        color: $gray;
+    }
+    &__space {
+        margin-left: 1.5rem;
+    }
+    &__link {
+        color: $text-gray;
+        text-decoration: none;
+        margin: 0.5rem;
+        transition: .1s linear color;
+        &:hover {
+            color: $white;
+        }
     }
 }
