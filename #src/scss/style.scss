@@ -1,6 +1,7 @@
 @import "vars";
 @import "reset";
 @import "fonts";
+@import "mixins";
 html {
     font-size: 62.5%;
 }
@@ -20,6 +21,8 @@ body {
 @import "blocks/header";
 /* Style for Navigation */
 @import "blocks/nav";
+/* Style for Burger */
+@import "blocks/burger";
 /* Style for Main Block */
 @import "blocks/main";
 /* Style for Content Block */

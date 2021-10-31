@@ -4,6 +4,10 @@
         margin-top: 4rem;
         display: flex;
         flex-direction: row;
+
+        @include breakpoint($mobile-bp) {
+            justify-content: center;
+        }
     }
 
     &__input {

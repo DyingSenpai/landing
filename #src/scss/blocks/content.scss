@@ -2,11 +2,20 @@
     display: flex;
     flex-direction: row;
 
+    @include breakpoint($notebook-bp-b) {
+        flex-direction: column;
+        align-items: center;  
+    }    
+
     &__info {
         width: 55%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            padding-bottom: 5rem;
+        }
     }
     
     &__title {
@@ -38,12 +47,20 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         margin: 5rem 2rem 0 0;
+        
+        @include breakpoint($mobile-bp) {
+            margin-right: 0;    
+        }
     }
 
     &__product {
@@ -53,8 +70,17 @@
         padding: 5.5rem 2rem;
 
         img {
-            width: 21.5rem;
-            height: 21.5rem;
+            width: 19rem;
+            height: 19rem;
+
+            @include breakpoint($notebook-bp-b) {
+                width: 15rem;
+                height: 15rem;  
+            }
+        }
+
+        @include breakpoint($notebook-bp-s) {
+            padding: 1.5rem;
         }
     }
 
@@ -93,6 +119,15 @@
             margin-top: 48rem;
             position: relative;
             z-index: 1;
+
+            @include breakpoint($tablet-bp) {
+                margin-top: 20rem;
+            }
+        }
+
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            height: 50rem;
         }
     }
 
@@ -128,5 +163,21 @@
         font-family: "PT Sans-Regular";
         font-weight: 400;
         line-height: 2.1rem;
+    }
+
+    &__list {
+        .content__product {
+            img {
+                @include breakpoint($notebook-bp-b) {
+                    width: 19rem;
+                    height: 19rem;  
+                }
+                @include breakpoint($mobile-bp) {
+                    align-self: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }

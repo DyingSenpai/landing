@@ -40,5 +40,9 @@
         font-size: 1.6rem;
         text-transform: uppercase;
         line-height: 2.4rem;
+
+        @include breakpoint($mobile-bp) {
+            width: 45rem;
+        }
     }
 }

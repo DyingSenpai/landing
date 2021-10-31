@@ -9,6 +9,10 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        
+        @include breakpoint($tablet-bp) {
+            justify-content: space-around;
+        }
     }
 
     .content__title {

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="page">
-        <header class="header">
+        <header class="header" id="header">
     <div class="container">
         <div class="header__top">
             <div class="header__item">
@@ -47,6 +47,9 @@
         </div>  
     </nav>
 </header>
+        <button type="button" class="burger" id="sidebarToggle">
+            <span>Открыть навигацию</span>
+        </button>
         <div class="main">
             <div class="main__logo">
                 <h1 class="main__logo-top">Porten</h1>
@@ -83,7 +86,7 @@
             </div> <!-- /.content__info-->
             <div class="content__img">
                 <img src="img/content1.png" alt="">
-                <h3 class="content__title">Сезон 2020/21</h3>
+                <h3 class="content__title">Новая Коллекция</h3>
                 <a href="#" class="content__link">Каталог</a>
             </div> <!-- /.content__img-->
         </div> <!-- /.content-->
@@ -100,7 +103,7 @@
             </div> <!-- /.content__info-->
         </div> <!-- /.content-->
         <div class="content">
-            <div class="container">
+            <div class="container content__list">
                 <h3 class="content__title">Новые поступления</h3>
                 <div class="content__products">
                     <div class="content__item">
@@ -166,10 +169,18 @@
             <div class="container">
                 <h3 class="content__title">Наши бренды</h3>
                 <div class="brands__items">
-                    <img src="img/brand1.png" alt="" class="brands__img">
-                    <img src="img/brand1.png" alt="" class="brands__img">
-                    <img src="img/brand1.png" alt="" class="brands__img">
-                    <img src="img/brand1.png" alt="" class="brands__img">
+                    <div class="brand__item">
+                        <img src="img/brand1.png" alt="" class="brands__img">
+                    </div>
+                    <div class="brand__item">
+                        <img src="img/brand1.png" alt="" class="brands__img">
+                    </div>
+                    <div class="brand__item">
+                        <img src="img/brand1.png" alt="" class="brands__img">
+                    </div>
+                    <div class="brand__item">
+                        <img src="img/brand1.png" alt="" class="brands__img">
+                    </div>
                 </div>
             </div> <!-- /.container-->
         </div> <!-- /.brands-->
@@ -204,5 +215,6 @@
     </div> <!-- /.container-->
 </footer>
     </div> <!-- /.page-->
+    <script src="js/script.js"></script>
 </body>
 </html>

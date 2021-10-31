@@ -1,5 +1,15 @@
 .header {
-    
+    display: block;
+    @include breakpoint($mobile-bp) {
+        display: none;
+        transform: translateY(-100%);
+        transition: .1s linear transform;
+        .show-sidebar & {
+            display: block;
+            transform: translateY(0);
+        }
+    }
+
     &__img {
         width: 1.4rem;
         height: 1.4rem;
@@ -14,25 +24,36 @@
         font-weight: 400;
         font-size: 1.2rem;
         color: $text-gray;
+
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: row;
         align-items: center;
+        
+        @include breakpoint($mobile-bp) {
+            justify-content: center;
+        }
     }
 
     &__info {
         margin-left: 1.5rem;
     }
+
     &__space {
         margin-left: 1.5rem;
     }
+
     &__link {
         color: $text-gray;
         text-decoration: none;
         margin: 0.5rem;
         transition: .1s linear color;
+    
         &:hover {
             color: $white;
         }
