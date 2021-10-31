@@ -1,0 +1,38 @@
+.form {
+
+    &__row {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__input {
+        background: rgba($color: $white, $alpha: 0.4);
+        border: 0;
+        padding: 1.5rem;
+        color: $white;
+
+        &::placeholder {
+            font-family: "PT Sans-Regular";
+            font-weight: 400;
+            color: $text-gray;
+        }
+    }
+
+    &__btn {
+        padding: 1rem 2rem;
+        border: 0;
+        background-color: $background-gray;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-family: "PT Sans-Regular"; 
+        font-weight: 400;
+        transition: .1s linear;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+}
