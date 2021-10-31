@@ -522,3 +522,59 @@ body {
   font-weight: 400;
   line-height: 2.1rem;
 }
+
+/* Style for Content Block */
+
+.brands {
+  background-color: #0F0F0F;
+  margin-top: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 7.5rem;
+}
+
+.brands__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brands .content__title {
+  margin-bottom: 4rem;
+}
+
+/* Style for Footer */
+
+.brands {
+  background-color: #0F0F0F;
+  margin-top: 15rem;
+  padding-top: 3rem;
+  padding-bottom: 7.5rem;
+}
+
+.brands__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brands .content__title {
+  margin-bottom: 4rem;
+}
